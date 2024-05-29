@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="f.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-image:url('https://thedailyguardian.com/wp-content/uploads/2024/02/Untitled-design-28-1.jpg')">
+    <div class="header">
+        <div class="logo"></div>
+         <div>
+             <div class="home"><p><b><a style="text-decoration: none; color: white;"href="frontpage.html"><i class="fa-solid fa-house"></i>Home</a></b></p></div>
+        </div>
+        <div>
+            <div class="home"><p><b><a style="text-decoration: none; color: white;" href="about.html">About</a></b></p></div>
+        </div>
+        <div>
+            <div class="home"><p><b><i class="fa-solid fa-address-book"></i>Contect us</b></p></div>
+        </div>
+        <div>
+            <div class="home"><p><b><i class="fa-solid fa-bars"></i>More</b></p></div>
+        </div>
+        
+    </div>
+    <div class="content">
+        <div class="search-bar">
+            <form name="webpage">
+            <select name="links" id="links">
+             <option>Select states</option>     
+             <option value="Rajsthan.html">Rajsthan</option>
+             <option value="mp.html">Madhya Pradesh</option>
+             <option value="up.html">Uttar pradesh</option>
+             <option value="goa.html">Goa</option>
+             <option value="bihar.html">Bihar</option>
+             <option value="mha.html">Maharashtra</option>
+             <option value="chh.html">Chhattisgarh</option>
+             <option value="pun.html">Punjab</option>
+             <option value="andhra.html">Andhra pradesh</option>
+             <option value="karanataka.html">Karnataka</option>
+             <option value="mizoram.html">Mizoram</option>
+             <option value="west.html">West Bengal</option>
+             <option>Tripura</option>
+             <option>Arunachal pradesh</option>
+             <option>Assam</option>
+             <option>Manipur</option>
+             <option>Gujrat</option>
+             <option>Haryana</option>
+             <option>Himachal Pradesh</option>
+             <option>Kerala</option>
+             <option>Nagaland</option>
+             <option>Odisha</option>
+             <option>Tamil Nadu</option>
+             <option>Jharkhand</option>
+             <option>Meghalaya</option>
+             <option>Telangana</option>
+             <option>Sikkim</option>
+             <option>Uttarakhand</option>
+             <option>Delhi</option>
+             <option>Jammu Kashmir</option>
+            </select>
+        </form>
+        </div>
+    </div>
+    <script>
+           var urlMenu = document.getElementById('links');
+           urlMenu.onchange = function()
+           {
+             var useroption = this.options[this.selectedIndex];
+             if (useroption.value !="nothing")
+             {
+                window.open(useroption.value,"HTML CSS JAVASCRIPT","");
+             }
+           }
+    </script>
+</body>
+</html>
+
